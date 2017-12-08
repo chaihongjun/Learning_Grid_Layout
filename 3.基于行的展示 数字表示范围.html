@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <!--PC端必选   强制360浏览器使用webkit渲染 -->
+    <meta name="renderer" content="webkit">
+    <!--必选  for PC -->
+    <title>demo 3: 基于行的展示 数字表示范围</title>
+    <style>
+    body {
+        margin: 40px;
+    }
+    .wrapper {
+              /* 父容器定义为grid*/
+        display: -ms-grid;
+        display: grid;
+        /*  创建含3个列的网格系统 */
+        -ms-grid-columns: 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px;
+/*
+
+      grid-column:  gird-column-start / grid-column-end;
+
+      grid-row:  gird-row-start / grid-row-end;
+
+
+         */
+        grid-gap: 10px;
+        background-color: #fff;
+        color: #444;
+    }
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    }
+
+/*  new */
+
+
+
+.a {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .b {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .c {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .d {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .e {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .f {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+
+    </style>
+</head>
+<body>
+    <h1> demo 3: 基于行的展示 数字表示范围</h1>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+</html>
